@@ -38,22 +38,22 @@ const MobileNavbar = ({ isOpen, onClose }) => {
 				</LogoContainer>
 				<MobileNavLinkList>
 					<MobileNavListItem isActive={currentPath === "/"}>
-						<Link href="/">
+						<Link href="/" onClick={onClose}>
 							<MobileNavLink>Beranda</MobileNavLink>
 						</Link>
 					</MobileNavListItem>
 					<MobileNavListItem isActive={currentPath === "/toko"}>
-						<Link href="/toko">
+						<Link href="/toko" onClick={onClose}>
 							<MobileNavLink>Toko Kesehatan</MobileNavLink>
 						</Link>
 					</MobileNavListItem>
 					<MobileNavListItem isActive={currentPath === "/konsultasi"}>
-						<Link href="/konsultasi">
+						<Link href="/konsultasi" onClick={onClose}>
 							<MobileNavLink>Konsultasi Medis</MobileNavLink>
 						</Link>
 					</MobileNavListItem>
 					<MobileNavListItem isActive={currentPath === "/artikel"}>
-						<Link href="/artikel">
+						<Link href="/artikel" onClick={onClose}>
 							<MobileNavLink>Artikel & Berita</MobileNavLink>
 						</Link>
 					</MobileNavListItem>

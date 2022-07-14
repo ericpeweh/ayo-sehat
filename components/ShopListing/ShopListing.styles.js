@@ -17,6 +17,29 @@ export const ShopListingContainer = styled.section`
 		justify-self: center;
 		margin-top: 5rem;
 	}
+
+	@media screen and (max-width: 1700px) {
+		width: 140rem;
+	}
+
+	@media screen and (max-width: 1500px) {
+		width: 90vw;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	@media screen and (max-width: 1000px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media screen and (max-width: 700px) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"b b"
+			"c c"
+			"e f"
+			"g d";
+		gap: 1.5rem;
+	}
 `;
 
 export const ShopCard = styled.div`
@@ -31,6 +54,10 @@ export const CardImageContainer = styled.div`
 	background-image: url(${props => props.imageUrl});
 	background-size: cover;
 	background-position: center;
+
+	@media screen and (max-width: 900px) {
+		height: 15rem;
+	}
 `;
 
 export const CardContent = styled.div`

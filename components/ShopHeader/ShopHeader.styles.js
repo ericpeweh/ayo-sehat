@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const ShopHeaderContainer = styled.div`
 	margin-top: calc(9rem + 5rem);
+
+	@media screen and (max-width: 900px) {
+		margin-top: calc(7rem + 4rem);
+	}
 `;
 
 export const ShopHeaderContent = styled.div`
@@ -40,6 +44,34 @@ export const ShopHeaderContent = styled.div`
 			transition: var(--transition-normal);
 		}
 	}
+
+	@media screen and (max-width: 1700px) {
+		width: 140rem;
+	}
+
+	@media screen and (max-width: 1500px) {
+		width: 90vw;
+		height: 50vh;
+	}
+
+	@media screen and (max-width: 1000px) {
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-areas:
+			"b b b b c c c c"
+			"b b b b c c c c"
+			"b b b b c c c c"
+			"d d e e g g f f";
+	}
+
+	@media screen and (max-width: 700px) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"b b"
+			"c c"
+			"e f"
+			"g d";
+		gap: 1.5rem;
+	}
 `;
 
 export const LeftBanner = styled.div`
@@ -47,6 +79,10 @@ export const LeftBanner = styled.div`
 	overflow: auto;
 	border: 1px solid var(--color-primary);
 	background-color: #f7f7f7;
+
+	@media screen and (max-width: 1000px) {
+		display: none;
+	}
 
 	&::-webkit-scrollbar {
 		display: none;

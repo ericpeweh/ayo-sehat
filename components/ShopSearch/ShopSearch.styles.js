@@ -15,6 +15,11 @@ export const ShopSearchContainer = styled.section`
 	& > h2 {
 		color: #fff;
 	}
+
+	@media screen and (max-width: 900px) {
+		height: 30vh;
+		margin-top: 7rem;
+	}
 `;
 
 export const SearchBarContainer = styled.div`
@@ -30,4 +35,8 @@ export const SearchBarInput = styled.input`
 	border-radius: 1rem;
 	border: 1px solid #666;
 	width: 60rem;
+
+	@media screen and (max-width: 900px) {
+		width: 40rem;
+	}
 `;
