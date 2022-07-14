@@ -3,6 +3,7 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import ShopHeader from "../components/ShopHeader/ShopHeader";
 import ShopListing from "../components/ShopListing/ShopListing";
+import ShopSearch from "../components/ShopSearch/ShopSearch";
 
 export default function Toko() {
 	return (
@@ -15,6 +16,7 @@ export default function Toko() {
 			<Navbar />
 			<main>
 				<ShopHeader />
+				<ShopSearch />
 				<ShopListing />
 			</main>
 			<Footer />
