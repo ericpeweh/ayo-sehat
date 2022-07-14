@@ -5,13 +5,19 @@ export const ConsultationContainer = styled.section`
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	min-height: 100vh;
+	height: calc(100vh - 9rem);
 	background-image: var(--gradient-tertiary), url("/consultation.jpg");
 	background-size: cover;
 	background-position: center;
+	margin-top: 9rem;
 
 	& > h2 {
 		color: #fff;
+	}
+
+	@media screen and (max-width: 900px) {
+		margin-top: 7rem;
+		height: calc(60vh - 7rem);
 	}
 `;
 
@@ -28,4 +34,8 @@ export const SearchBarInput = styled.input`
 	border-radius: 1rem;
 	border: 1px solid #666;
 	width: 60rem;
+
+	@media screen and (max-width: 900px) {
+		width: 40rem;
+	}
 `;

@@ -10,6 +10,23 @@ export const ArticleContainer = styled.div`
 	gap: 2rem;
 	width: 160rem;
 	margin: 4rem auto 8rem;
+
+	@media screen and (max-width: 1700px) {
+		width: 140rem;
+	}
+
+	@media screen and (max-width: 1500px) {
+		width: 90vw;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media screen and (max-width: 1100px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media screen and (max-width: 600px) {
+		grid-template-columns: 1fr;
+	}
 `;
 
 export const Article = styled.div`
@@ -27,6 +44,14 @@ export const Article = styled.div`
 	& > svg {
 		font-size: 5rem;
 		grid-row: 1 / -1;
+
+		@media screen and (max-width: 900px) {
+			font-size: 4rem;
+		}
+
+		@media screen and (max-width: 600px) {
+			font-size: 3rem;
+		}
 	}
 
 	&:hover {
@@ -42,6 +67,14 @@ export const ArticleTitle = styled.h4`
 	margin: 0;
 	align-self: flex-end;
 	justify-self: flex-start;
+
+	@media screen and (max-width: 900px) {
+		font-size: 1.8rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 1.7rem;
+	}
 `;
 
 export const ArticleCount = styled.p`
@@ -53,4 +86,12 @@ export const ArticleCount = styled.p`
 	padding: 0;
 	margin: 0;
 	color: #666;
+
+	@media screen and (max-width: 900px) {
+		font-size: 1.5rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 1.4rem;
+	}
 `;
