@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Button from "../Button/Button";
 import {
@@ -24,16 +25,24 @@ const Navbar = () => {
 			<NavlinksContainer>
 				<NavLinks>
 					<NavLinkItem>
-						<NavItem isActive={currentPath === "/"}>Beranda</NavItem>
+						<Link href="/">
+							<NavItem isActive={currentPath === "/"}>Beranda</NavItem>
+						</Link>
 					</NavLinkItem>
 					<NavLinkItem>
-						<NavItem isActive={currentPath === "/toko"}>Toko</NavItem>
+						<Link href="/toko">
+							<NavItem isActive={currentPath === "/toko"}>Toko</NavItem>
+						</Link>
 					</NavLinkItem>
 					<NavLinkItem>
-						<NavItem isActive={currentPath === "/konsultasi"}>Konsultasi</NavItem>
+						<Link href="/konsultasi">
+							<NavItem isActive={currentPath === "/konsultasi"}>Konsultasi</NavItem>
+						</Link>
 					</NavLinkItem>
 					<NavLinkItem>
-						<NavItem isActive={currentPath === "/artikel"}>Artikel</NavItem>
+						<Link href="/artikel">
+							<NavItem isActive={currentPath === "/artikel"}>Artikel</NavItem>
+						</Link>
 					</NavLinkItem>
 				</NavLinks>
 			</NavlinksContainer>
