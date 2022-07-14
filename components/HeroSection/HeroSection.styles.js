@@ -14,6 +14,31 @@ export const HeroSectionContainer = styled.div`
 	grid-template-columns: repeat(5, 1fr);
 	gap: 4rem;
 	padding: 3rem 4rem;
+
+	@media screen and (max-width: 1600px) {
+		width: 85vw;
+		gap: 2rem;
+		padding: 2rem 2rem;
+		margin-top: -8rem;
+	}
+
+	@media screen and (max-width: 1000px) {
+		margin-top: -5rem;
+	}
+
+	@media screen and (max-width: 900px) {
+		grid-template-columns: repeat(2, 1fr);
+		margin-top: -10rem;
+		width: 90%;
+
+		& > div:last-child {
+			grid-column: 1 / -1;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		margin-top: -15rem;
+	}
 `;
 
 export const HeroSectionCard = styled.div`
@@ -35,15 +60,26 @@ export const HeroSectionCard = styled.div`
 	}
 `;
 
-export const HeroCardImage = styled.h3`
+export const HeroCardImage = styled.div`
 	width: 9rem;
 	height: 9rem;
 	border-radius: 50%;
 	overflow: hidden;
 	border: 3px solid var(--color-secondary-light);
+	margin-top: 1rem;
+
+	@media screen and (max-width: 1100px) {
+		width: 8rem;
+		height: 8rem;
+	}
 `;
 
 export const HeroCardTitle = styled.h3`
 	font-size: 1.8rem;
 	font-weight: 500;
+	text-align: center;
+
+	@media screen and (max-width: 1100px) {
+		font-size: 1.6rem;
+	}
 `;

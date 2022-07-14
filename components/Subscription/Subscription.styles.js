@@ -18,6 +18,25 @@ export const SubscriptionContent = styled.div`
 	flex-direction: column;
 	width: 160rem;
 	padding: 10rem 0;
+
+	@media screen and (max-width: 1700px) {
+		width: 140rem;
+	}
+
+	@media screen and (max-width: 1500px) {
+		width: 90vw;
+	}
+
+	@media screen and (max-width: 900px) {
+		grid-template-columns: 1fr;
+		padding: 5rem 0;
+	}
+
+	@media screen and (max-width: 900px) {
+		& > button {
+			align-self: stretch;
+		}
+	}
 `;
 
 export const SubscriptionTitle = styled.h2`

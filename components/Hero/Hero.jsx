@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Button from "../Button/Button";
 import ButtonOutlined from "../ButtonOutlined/ButtonOutlined";

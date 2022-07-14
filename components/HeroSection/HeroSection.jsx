@@ -38,13 +38,13 @@ const HeroSection = () => {
 				<HeroCardImage>
 					<Image
 						src="/card-3.png"
-						alt="media pengobatan"
+						alt="pengobatan"
 						layout="responsive"
 						width={1050}
 						height={1050}
 					/>
 				</HeroCardImage>
-				<HeroCardTitle>Media Pengobatan</HeroCardTitle>
+				<HeroCardTitle>Pengobatan</HeroCardTitle>
 			</HeroSectionCard>
 			<HeroSectionCard>
 				<HeroCardImage>
