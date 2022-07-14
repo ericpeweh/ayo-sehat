@@ -11,6 +11,46 @@ export const FooterContentContainer = styled.div`
 	grid-template-columns: 50rem repeat(3, 1fr);
 	margin: 0 auto 6rem;
 	gap: 2rem;
+
+	@media screen and (max-width: 1700px) {
+		width: 140rem;
+	}
+
+	@media screen and (max-width: 1500px) {
+		width: 90vw;
+	}
+
+	@media screen and (max-width: 1400px) {
+		grid-template-columns: 40rem repeat(2, 1fr);
+		& > div:nth-child(2) {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 900px) {
+		grid-template-columns: repeat(2, 1fr);
+
+		& > div:last-child {
+			grid-column: 1 / -1;
+		}
+
+		& > div:last-child > ul {
+			display: flex;
+			flex-direction: row;
+			gap: 4rem;
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		grid-template-columns: 1fr;
+
+		& > div:last-child > ul {
+			gap: 4rem;
+			row-gap: 1rem;
+			flex-wrap: wrap;
+		}
+	}
 `;
 
 export const LogoContainer = styled.div`
