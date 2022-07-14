@@ -38,5 +38,6 @@ export const SearchBarInput = styled.input`
 
 	@media screen and (max-width: 900px) {
 		width: 40rem;
+		font-size: 1.7rem;
 	}
 `;

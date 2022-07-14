@@ -16,9 +16,12 @@ export const ArticleSearchContainer = styled.section`
 		color: #fff;
 	}
 
+	@media screen and (max-width: 1400px) {
+		margin-top: 7rem;
+	}
+
 	@media screen and (max-width: 900px) {
 		height: 30vh;
-		margin-top: 7rem;
 	}
 `;
 
@@ -38,5 +41,6 @@ export const SearchBarInput = styled.input`
 
 	@media screen and (max-width: 900px) {
 		width: 40rem;
+		font-size: 1.7rem;
 	}
 `;

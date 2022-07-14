@@ -45,7 +45,7 @@ export const Article = styled.div`
 		font-size: 5rem;
 		grid-row: 1 / -1;
 
-		@media screen and (max-width: 900px) {
+		@media screen and (max-width: 1400px) {
 			font-size: 4rem;
 		}
 
@@ -68,12 +68,12 @@ export const ArticleTitle = styled.h4`
 	align-self: flex-end;
 	justify-self: flex-start;
 
-	@media screen and (max-width: 900px) {
-		font-size: 1.8rem;
+	@media screen and (max-width: 1400px) {
+		font-size: 1.7rem;
 	}
 
 	@media screen and (max-width: 600px) {
-		font-size: 1.7rem;
+		font-size: 1.6rem;
 	}
 `;
 

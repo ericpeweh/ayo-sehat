@@ -20,7 +20,7 @@ export const MobileNavbarContainer = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-	width: 50%;
+	width: 40%;
 	margin: 2rem auto 4rem;
 `;
 
@@ -37,7 +37,7 @@ export const MobileNavLinkList = styled.ul`
 export const MobileNavListItem = styled.li`
 	margin-bottom: 2rem;
 	padding: 1rem 2rem;
-
+	cursor: pointer;
 	color: ${props => (props.isActive ? "var(--color-primary)" : "#222")};
 	font-weight: ${props => (props.isActive ? 600 : 500)};
 

@@ -51,7 +51,7 @@ export const ShopHeaderContent = styled.div`
 
 	@media screen and (max-width: 1500px) {
 		width: 90vw;
-		height: 50vh;
+		height: 80vh;
 	}
 
 	@media screen and (max-width: 1000px) {
@@ -61,6 +61,7 @@ export const ShopHeaderContent = styled.div`
 			"b b b b c c c c"
 			"b b b b c c c c"
 			"d d e e g g f f";
+		height: 60vh;
 	}
 
 	@media screen and (max-width: 700px) {
@@ -103,6 +104,10 @@ export const LeftBanner = styled.div`
 			align-items: center;
 			flex: 1;
 			cursor: pointer;
+
+			@media screen and (max-width: 1400px) {
+				padding: 0.5rem 2rem;
+			}
 
 			&:hover {
 				color: var(--color-primary);

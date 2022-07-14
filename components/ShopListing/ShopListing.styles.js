@@ -25,10 +25,19 @@ export const ShopListingContainer = styled.section`
 	@media screen and (max-width: 1500px) {
 		width: 90vw;
 		grid-template-columns: repeat(4, 1fr);
+
+		& > div:nth-child(9),
+		& > div:nth-child(10) {
+			display: none;
+		}
 	}
 
 	@media screen and (max-width: 1000px) {
 		grid-template-columns: repeat(3, 1fr);
+
+		& > div:nth-child(10) {
+			display: block;
+		}
 	}
 
 	@media screen and (max-width: 700px) {
@@ -39,6 +48,10 @@ export const ShopListingContainer = styled.section`
 			"e f"
 			"g d";
 		gap: 1.5rem;
+
+		& > div:nth-child(9) {
+			display: block;
+		}
 	}
 `;
 
