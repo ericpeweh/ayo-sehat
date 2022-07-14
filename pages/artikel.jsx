@@ -26,3 +26,9 @@ export default function Artikel() {
 		</div>
 	);
 }
+
+export async function getStaticProps(context) {
+	return {
+		props: {}
+	};
+}

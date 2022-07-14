@@ -21,3 +21,9 @@ export default function Konsultasi() {
 		</div>
 	);
 }
+
+export async function getStaticProps(context) {
+	return {
+		props: {}
+	};
+}
