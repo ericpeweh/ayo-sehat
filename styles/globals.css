@@ -34,3 +34,19 @@ a {
 	--shadow-sm: 0.2rem 2rem 2rem -2rem rgba(0, 0, 0, 0.5);
 	--shadow-md: 0.2rem 3.2rem 20rem -2rem rgba(0, 0, 0, 0.5);
 }
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #999;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-primary);
+}
