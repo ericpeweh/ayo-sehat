@@ -8,6 +8,27 @@ body {
 	font-weight: 400;
 }
 
+@media screen and (max-width: 1400px) {
+	html,
+	body {
+		font-size: 55%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	html,
+	body {
+		font-size: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	html,
+	body {
+		font-size: 45%;
+	}
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
